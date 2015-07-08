@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "LACircleChartView"
-  s.version          = "0.1.0"
+  s.version          = "1.0.0"
   s.summary          = "An Ios circle chart View"
   s.description      = <<-DESC
                        An circle view which can display part of circle
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
                        * Don't worry about the indent, we strip it!
                        DESC
   s.homepage         = "https://github.com/huhk345/LACircleChartView"
-  s.license          = 'MIT'
+  s.license          = 'Apache 2.0'
   s.author           = { "LakeR" => "njlaker@gmail.com" }
   s.source           = { :git => "https://github.com/huhk345/LACircleChartView.git", :tag => s.version.to_s }
 
