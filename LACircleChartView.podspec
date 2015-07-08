@@ -10,19 +10,18 @@
 Pod::Spec.new do |s|
   s.name             = "LACircleChartView"
   s.version          = "0.1.0"
-  s.summary          = "A short description of LACircleChartView."
+  s.summary          = "An Ios circle chart View"
   s.description      = <<-DESC
-                       An optional longer description of LACircleChartView
+                       An circle view which can display part of circle
 
                        * Markdown format.
                        * Don't worry about the indent, we strip it!
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/LACircleChartView"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage         = "https://github.com/huhk345/LACircleChartView"
   s.license          = 'MIT'
   s.author           = { "LakeR" => "njlaker@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/LACircleChartView.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/huhk345/LACircleChartView.git", :tag => s.version.to_s }
+
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true

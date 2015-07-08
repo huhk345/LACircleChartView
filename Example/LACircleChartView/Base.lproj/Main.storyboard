@@ -1,25 +1,149 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8xt-np-nUf">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <scene sceneID="EgE-K6-GaM">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8xt-np-nUf" customClass="ViewController" customModule="LACircleChartView_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="ktd-TO-QbA"/>
+                        <viewControllerLayoutGuide type="bottom" id="MFH-nw-wAG"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" contentMode="scaleToFill" id="E7f-zU-6gC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KqA-Gl-fwm" customClass="LACircleView" customModule="LACircleChartView">
+                                <rect key="frame" x="300" y="25" width="300" height="300"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isRectCap" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isAutojustRadius" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.14117647059999999" green="0.71372549019999998" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" red="0.14117647059999999" green="0.71372549019999998" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="baseLineColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="strokeWidth">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showArrow" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progress">
+                                        <real key="value" value="0.80000000000000004"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <metadata/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cKw-Y1-u58" customClass="LACircleView" customModule="LACircleChartView">
+                                <rect key="frame" x="0.0" y="25" width="300" height="300"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cKw-Y1-u58" secondAttribute="height" multiplier="1:1" id="J38-gv-P0A"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isAutojustRadius" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.1333333333" green="0.75294117650000003" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" red="1" green="0.35294117650000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isRectCap" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="middleColor">
+                                        <color key="value" red="1" green="0.51764705879999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="baseLineColor">
+                                        <color key="value" red="0.22352941179999999" green="0.68627450980000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="percentOfCircle">
+                                        <real key="value" value="0.80000000000000004"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showArrow" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progress">
+                                        <real key="value" value="0.40000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <metadata/>
+                            </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="xgK-K9-A7X">
+                                <rect key="frame" x="14" y="376" width="572" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="hnZ-XE-p8x"/>
+                                </constraints>
+                                <metadata/>
+                                <connections>
+                                    <action selector="percentChanged:" destination="8xt-np-nUf" eventType="valueChanged" id="3SX-Ix-e7T"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="percent" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UV6-J6-05g">
+                                <rect key="frame" x="16" y="347" width="85" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="N0J-qU-9ta"/>
+                                    <constraint firstAttribute="width" constant="85" id="aFC-ej-PIY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <metadata/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="vzU-nL-bo7">
+                                <rect key="frame" x="14" y="451" width="572" height="31"/>
+                                <metadata/>
+                                <connections>
+                                    <action selector="circleOfPercentChanged:" destination="8xt-np-nUf" eventType="valueChanged" id="TFA-bL-UAT"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="percent of circle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UID-0z-jY8">
+                                <rect key="frame" x="16" y="422" width="221" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="KEG-Z3-ITx"/>
+                                    <constraint firstAttribute="width" constant="221" id="KWR-L8-8BR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <metadata/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91404536729999997" green="0.91977624729999996" blue="0.92920778510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="xgK-K9-A7X" firstAttribute="leading" secondItem="E7f-zU-6gC" secondAttribute="leadingMargin" id="G6L-Qg-2CD"/>
+                            <constraint firstItem="KqA-Gl-fwm" firstAttribute="leading" secondItem="cKw-Y1-u58" secondAttribute="trailing" id="Hfh-9s-Ucx"/>
+                            <constraint firstItem="vzU-nL-bo7" firstAttribute="leading" secondItem="UID-0z-jY8" secondAttribute="leading" id="MYy-tW-0FC"/>
+                            <constraint firstItem="vzU-nL-bo7" firstAttribute="top" secondItem="UID-0z-jY8" secondAttribute="bottom" constant="8" symbolic="YES" id="Mg1-bN-Y2V"/>
+                            <constraint firstItem="cKw-Y1-u58" firstAttribute="top" secondItem="ktd-TO-QbA" secondAttribute="bottom" constant="5" id="OWB-2X-n2z"/>
+                            <constraint firstItem="UV6-J6-05g" firstAttribute="leading" secondItem="E7f-zU-6gC" secondAttribute="leadingMargin" id="RQZ-KH-gn2"/>
+                            <constraint firstItem="UV6-J6-05g" firstAttribute="top" secondItem="cKw-Y1-u58" secondAttribute="bottom" constant="22.5" id="T2g-qq-7zC"/>
+                            <constraint firstItem="KqA-Gl-fwm" firstAttribute="width" secondItem="cKw-Y1-u58" secondAttribute="width" id="ULD-88-ika"/>
+                            <constraint firstItem="cKw-Y1-u58" firstAttribute="leading" secondItem="E7f-zU-6gC" secondAttribute="leading" id="Vf9-C8-qZE"/>
+                            <constraint firstAttribute="trailing" secondItem="KqA-Gl-fwm" secondAttribute="trailing" id="W3d-NZ-4TK"/>
+                            <constraint firstItem="KqA-Gl-fwm" firstAttribute="height" secondItem="cKw-Y1-u58" secondAttribute="height" id="drT-rD-CeD"/>
+                            <constraint firstItem="vzU-nL-bo7" firstAttribute="trailing" secondItem="xgK-K9-A7X" secondAttribute="trailing" id="gQ0-Vz-IBw"/>
+                            <constraint firstItem="UID-0z-jY8" firstAttribute="top" secondItem="xgK-K9-A7X" secondAttribute="bottom" constant="16" id="iL7-ut-0xL"/>
+                            <constraint firstItem="xgK-K9-A7X" firstAttribute="trailing" secondItem="E7f-zU-6gC" secondAttribute="trailingMargin" id="iSv-4P-6uF"/>
+                            <constraint firstItem="UID-0z-jY8" firstAttribute="leading" secondItem="xgK-K9-A7X" secondAttribute="leading" id="nN2-1j-zpe"/>
+                            <constraint firstItem="xgK-K9-A7X" firstAttribute="top" secondItem="UV6-J6-05g" secondAttribute="bottom" constant="8" id="r1d-2I-Xt1"/>
+                            <constraint firstItem="KqA-Gl-fwm" firstAttribute="top" secondItem="cKw-Y1-u58" secondAttribute="top" id="sDs-TP-lce"/>
+                        </constraints>
+                        <metadata/>
                     </view>
+                    <connections>
+                        <outlet property="circle1" destination="cKw-Y1-u58" id="p9d-Pq-eMD"/>
+                        <outlet property="circle2" destination="KqA-Gl-fwm" id="Hds-dW-CbM"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Myb-RP-LmI" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="312.5" y="347.5"/>
         </scene>
     </scenes>
 </document>
