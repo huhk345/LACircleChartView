@@ -5,6 +5,10 @@
 [![License](https://img.shields.io/cocoapods/l/LACircleChartView.svg?style=flat)](http://cocoapods.org/pods/LACircleChartView)
 [![Platform](https://img.shields.io/cocoapods/p/LACircleChartView.svg?style=flat)](http://cocoapods.org/pods/LACircleChartView)
 
+##Screenshot
+[!ScreenShot](https://raw.github.com/huhk345/LACircleChartView/master/ScreenShot/screenshot/screenshot.jpg)
+
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
